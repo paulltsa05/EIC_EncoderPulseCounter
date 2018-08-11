@@ -1,0 +1,1258 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18344 ]
+[d frameptr 6 ]
+"106 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\modbusMS.h
+[e E7942 MB_FC `uc
+MB_FC_NONE 0
+MB_FC_READ_COILS 1
+MB_FC_READ_DISCRETE_INPUT 2
+MB_FC_READ_REGISTERS 3
+MB_FC_READ_INPUT_REGISTER 4
+MB_FC_WRITE_COIL 5
+MB_FC_WRITE_REGISTER 6
+MB_FC_WRITE_MULTIPLE_COILS 15
+MB_FC_WRITE_MULTIPLE_REGISTERS 16
+]
+"227 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\main.c
+[e E8027 . `uc
+IDLE_STOP 0
+RUNNING 1
+STOP_OK 2
+STOP_NOK 3
+]
+"230
+[e E8032 . `uc
+CLOCKWISE 0
+ANTICLOCKWISE 1
+]
+"106 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\modbusMS.h
+[e E147 MB_FC `uc
+MB_FC_NONE 0
+MB_FC_READ_COILS 1
+MB_FC_READ_DISCRETE_INPUT 2
+MB_FC_READ_REGISTERS 3
+MB_FC_READ_INPUT_REGISTER 4
+MB_FC_WRITE_COIL 5
+MB_FC_WRITE_REGISTER 6
+MB_FC_WRITE_MULTIPLE_COILS 15
+MB_FC_WRITE_MULTIPLE_REGISTERS 16
+]
+"90 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\modbusMS.c
+[e E157 COM_STATES `uc
+COM_IDLE 0
+COM_WAITING 1
+]
+"102
+[e E139 MESSAGE `uc
+ID 0
+FUNC 1
+ADD_HI 2
+ADD_LO 3
+NB_HI 4
+NB_LO 5
+BYTE_CNT 6
+]
+"220
+[e E166 . `uc
+NO_REPLY 255
+EXC_FUNC_CODE 1
+EXC_ADDR_RANGE 2
+EXC_REGS_QUANT 3
+EXC_EXECUTE 4
+]
+"425
+[e E160 ERR_LIST `c
+ERR_NOT_MASTER -1
+ERR_POLLING -2
+ERR_BUFF_OVERFLOW -3
+ERR_BAD_CRC -4
+ERR_EXCEPTION -5
+]
+"656
+[e E135 . `uc
+RESPONSE_SIZE 6
+EXCEPTION_SIZE 3
+CHECKSUM_SIZE 2
+]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+[v i1___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"12 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\LED_Ctrl.c
+[v _LedONStatusBusy LedONStatusBusy `(uc  1 e 1 0 ]
+"18
+[v _LedONStartConfig LedONStartConfig `(uc  1 e 1 0 ]
+[v i1_LedONStartConfig LedONStartConfig `(uc  1 e 1 0 ]
+"54
+[v _LedON_Control_10msec LedON_Control_10msec `(v  1 e 1 0 ]
+"166 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"268
+[v _EncA_PulseEdgeEvent EncA_PulseEdgeEvent `(v  1 e 1 0 ]
+"283
+[v _Timer3_Overflow Timer3_Overflow `(v  1 e 1 0 ]
+"326
+[v _OnEncPulseEdgeEvent OnEncPulseEdgeEvent `(v  1 e 1 0 ]
+"364
+[v _Timer0_tick10msecFunc Timer0_tick10msecFunc `(v  1 e 1 0 ]
+"374
+[v _millis millis `(ul  1 e 4 0 ]
+"384
+[v _delayMsec delayMsec `(v  1 e 1 0 ]
+"410
+[v _valtoasciichar valtoasciichar `(uc  1 e 1 0 ]
+"436
+[v _Serialbegin Serialbegin `(v  1 e 1 0 ]
+"440
+[v _Serialavailable Serialavailable `(uc  1 e 1 0 ]
+"445
+[v _ClearSerialRxBuffer ClearSerialRxBuffer `(v  1 e 1 0 ]
+"457
+[v _Serialread Serialread `(uc  1 e 1 0 ]
+"461
+[v _Serialwrite Serialwrite `(v  1 e 1 0 ]
+"58 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/ccp1.c
+[v _CCP1_Initialize CCP1_Initialize `(v  1 e 1 0 ]
+"84
+[v _CCP1_CaptureISR CCP1_CaptureISR `(v  1 e 1 0 ]
+"99
+[v _CCP1_CallBack CCP1_CallBack `(v  1 e 1 0 ]
+"75 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"112
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+"155
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+"174
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+"51 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"76 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"88
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"106
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"54 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"130
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+"150
+[v _IOCCF4_ISR IOCCF4_ISR `(v  1 e 1 0 ]
+"165
+[v _IOCCF4_SetInterruptHandler IOCCF4_SetInterruptHandler `(v  1 e 1 0 ]
+"172
+[v _IOCCF4_DefaultInterruptHandler IOCCF4_DefaultInterruptHandler `(v  1 e 1 0 ]
+"180
+[v _IOCCF5_ISR IOCCF5_ISR `(v  1 e 1 0 ]
+"195
+[v _IOCCF5_SetInterruptHandler IOCCF5_SetInterruptHandler `(v  1 e 1 0 ]
+"202
+[v _IOCCF5_DefaultInterruptHandler IOCCF5_DefaultInterruptHandler `(v  1 e 1 0 ]
+"60 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"89
+[v _TMR0_StartTimer TMR0_StartTimer `(v  1 e 1 0 ]
+"123
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"134
+[v _TMR0_CallBack TMR0_CallBack `(v  1 e 1 0 ]
+"145
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+"149
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"64 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/tmr3.c
+[v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
+"96
+[v _TMR3_StartTimer TMR3_StartTimer `(v  1 e 1 0 ]
+[v i1_TMR3_StartTimer TMR3_StartTimer `(v  1 e 1 0 ]
+"102
+[v _TMR3_StopTimer TMR3_StopTimer `(v  1 e 1 0 ]
+[v i1_TMR3_StopTimer TMR3_StopTimer `(v  1 e 1 0 ]
+"108
+[v _TMR3_ReadTimer TMR3_ReadTimer `(ui  1 e 2 0 ]
+"117
+[v _TMR3_WriteTimer TMR3_WriteTimer `(v  1 e 1 0 ]
+[v i1_TMR3_WriteTimer TMR3_WriteTimer `(v  1 e 1 0 ]
+"156
+[v _TMR3_ISR TMR3_ISR `(v  1 e 1 0 ]
+"172
+[v _TMR3_SetInterruptHandler TMR3_SetInterruptHandler `(v  1 e 1 0 ]
+"176
+[v _TMR3_DefaultInterruptHandler TMR3_DefaultInterruptHandler `(v  1 e 1 0 ]
+"53 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\modbusMS.c
+[v _Modbusinit Modbusinit `(v  1 e 1 0 ]
+"316
+[v _ModbuspollSlave ModbuspollSlave `(c  1 e 1 0 ]
+"401
+[v _getRxBuffer getRxBuffer `(c  1 e 1 0 ]
+"442
+[v _sendTxBuffer sendTxBuffer `(v  1 e 1 0 ]
+"504
+[v _calcCRC calcCRC `(ui  1 e 2 0 ]
+"535
+[v _validateRequest validateRequest `(uc  1 e 1 0 ]
+"605
+[v _validateAnswer validateAnswer `(uc  1 e 1 0 ]
+"649
+[v _buildException buildException `(v  1 e 1 0 ]
+"666
+[v _get_FC1 get_FC1 `(v  1 e 1 0 ]
+"684
+[v _get_FC3 get_FC3 `(v  1 e 1 0 ]
+"706
+[v _process_FC1 process_FC1 `(c  1 e 1 0 ]
+"761
+[v _process_FC3 process_FC3 `(c  1 e 1 0 ]
+"793
+[v _process_FC5 process_FC5 `(c  1 e 1 0 ]
+"826
+[v _process_FC6 process_FC6 `(c  1 e 1 0 ]
+"852
+[v _process_FC15 process_FC15 `(c  1 e 1 0 ]
+"903
+[v _process_FC16 process_FC16 `(c  1 e 1 0 ]
+"1051
+[v _wordConvert wordConvert `(ui  1 e 2 0 ]
+[s S776 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"348 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic16f18344.h
+[u S781 . 1 `S776 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES781  1 e 1 @11 ]
+[s S1022 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"471
+[u S1031 . 1 `S1022 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES1031  1 e 1 @14 ]
+[s S274 . 1 `uc 1 INTF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"528
+[u S279 . 1 `S274 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES279  1 e 1 @16 ]
+[s S801 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 BCL1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"564
+[u S810 . 1 `S801 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES810  1 e 1 @17 ]
+[s S24 . 1 `uc 1 CLC1IF 1 0 :1:0 
+`uc 1 CLC2IF 1 0 :1:1 
+`uc 1 CLC3IF 1 0 :1:2 
+`uc 1 CLC4IF 1 0 :1:3 
+`uc 1 TMR3IF 1 0 :1:4 
+`uc 1 TMR3GIF 1 0 :1:5 
+`uc 1 CSWIF 1 0 :1:6 
+`uc 1 OSFIF 1 0 :1:7 
+]
+"675
+[u S33 . 1 `S24 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES33  1 e 1 @19 ]
+[s S638 . 1 `uc 1 CCP1IF 1 0 :1:0 
+`uc 1 CCP2IF 1 0 :1:1 
+`uc 1 CCP3IF 1 0 :1:2 
+`uc 1 CCP4IF 1 0 :1:3 
+`uc 1 TMR5IF 1 0 :1:4 
+`uc 1 TMR5GIF 1 0 :1:5 
+`uc 1 CWG1IF 1 0 :1:6 
+`uc 1 CWG2IF 1 0 :1:7 
+]
+"736
+[u S647 . 1 `S638 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES647  1 e 1 @20 ]
+"780
+[v _TMR0L TMR0L `VEuc  1 e 1 @21 ]
+"917
+[v _TMR0H TMR0H `VEuc  1 e 1 @22 ]
+"1170
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @23 ]
+[s S313 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T016BIT 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+"1190
+[s S319 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
+`uc 1 T0OUTPS1 1 0 :1:1 
+`uc 1 T0OUTPS2 1 0 :1:2 
+`uc 1 T0OUTPS3 1 0 :1:3 
+]
+[u S324 . 1 `S313 1 . 1 0 `S319 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES324  1 e 1 @23 ]
+"1234
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @24 ]
+"1602
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1646
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1684
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S287 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"1758
+[u S292 . 1 `S287 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES292  1 e 1 @144 ]
+[s S189 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 BCL1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1794
+[u S198 . 1 `S189 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES198  1 e 1 @145 ]
+[s S45 . 1 `uc 1 CLC1IE 1 0 :1:0 
+`uc 1 CLC2IE 1 0 :1:1 
+`uc 1 CLC3IE 1 0 :1:2 
+`uc 1 CLC4IE 1 0 :1:3 
+`uc 1 TMR3IE 1 0 :1:4 
+`uc 1 TMR3GIE 1 0 :1:5 
+`uc 1 CSWIE 1 0 :1:6 
+`uc 1 OSFIE 1 0 :1:7 
+]
+"1905
+[u S54 . 1 `S45 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES54  1 e 1 @147 ]
+[s S659 . 1 `uc 1 CCP1IE 1 0 :1:0 
+`uc 1 CCP2IE 1 0 :1:1 
+`uc 1 CCP3IE 1 0 :1:2 
+`uc 1 CCP4IE 1 0 :1:3 
+`uc 1 TMR5IE 1 0 :1:4 
+`uc 1 TMR5GIE 1 0 :1:5 
+`uc 1 CWG1IE 1 0 :1:6 
+`uc 1 CWG2IE 1 0 :1:7 
+]
+"1966
+[u S668 . 1 `S659 1 . 1 0 ]
+[v _PIE4bits PIE4bits `VES668  1 e 1 @148 ]
+"2010
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"2319
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"2363
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+[s S948 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"2377
+[u S954 . 1 `S948 1 . 1 0 ]
+[v _LATBbits LATBbits `VES954  1 e 1 @269 ]
+"2401
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S968 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"2418
+[u S977 . 1 `S968 1 . 1 0 ]
+[v _LATCbits LATCbits `VES977  1 e 1 @270 ]
+"2946
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2990
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3028
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"3109
+[v _RC1REG RC1REG `VEuc  1 e 1 @409 ]
+"3162
+[v _TX1REG TX1REG `VEuc  1 e 1 @410 ]
+"3221
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @411 ]
+"3290
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @412 ]
+"3343
+[v _RC1STA RC1STA `VEuc  1 e 1 @413 ]
+[s S216 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3369
+[u S225 . 1 `S216 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES225  1 e 1 @413 ]
+"3522
+[v _TX1STA TX1STA `VEuc  1 e 1 @414 ]
+"3701
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @415 ]
+"3946
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3995
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"4033
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"5485
+[v _ODCONA ODCONA `VEuc  1 e 1 @652 ]
+"5529
+[v _ODCONB ODCONB `VEuc  1 e 1 @653 ]
+"5567
+[v _ODCONC ODCONC `VEuc  1 e 1 @654 ]
+"5634
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @657 ]
+"5653
+[v _CCPR1H CCPR1H `VEuc  1 e 1 @658 ]
+"5672
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @659 ]
+"5736
+[v _CCP1CAP CCP1CAP `VEuc  1 e 1 @660 ]
+[s S606 . 1 `uc 1 C1TSEL 1 0 :2:0 
+`uc 1 C2TSEL 1 0 :2:2 
+`uc 1 C3TSEL 1 0 :2:4 
+`uc 1 C4TSEL 1 0 :2:6 
+]
+"5957
+[s S611 . 1 `uc 1 C1TSEL0 1 0 :1:0 
+`uc 1 C1TSEL1 1 0 :1:1 
+`uc 1 C2TSEL0 1 0 :1:2 
+`uc 1 C2TSEL1 1 0 :1:3 
+`uc 1 C3TSEL0 1 0 :1:4 
+`uc 1 C3TSEL1 1 0 :1:5 
+`uc 1 C4TSEL0 1 0 :1:6 
+`uc 1 C4TSEL1 1 0 :1:7 
+]
+[u S620 . 1 `S606 1 . 1 0 `S611 1 . 1 0 ]
+[v _CCPTMRSbits CCPTMRSbits `VES620  1 e 1 @671 ]
+"6470
+[v _INLVLA INLVLA `VEuc  1 e 1 @908 ]
+"6557
+[v _INLVLC INLVLC `VEuc  1 e 1 @910 ]
+[s S435 . 1 `uc 1 IOCCP0 1 0 :1:0 
+`uc 1 IOCCP1 1 0 :1:1 
+`uc 1 IOCCP2 1 0 :1:2 
+`uc 1 IOCCP3 1 0 :1:3 
+`uc 1 IOCCP4 1 0 :1:4 
+`uc 1 IOCCP5 1 0 :1:5 
+`uc 1 IOCCP6 1 0 :1:6 
+`uc 1 IOCCP7 1 0 :1:7 
+]
+"6896
+[u S444 . 1 `S435 1 . 1 0 ]
+[v _IOCCPbits IOCCPbits `VES444  1 e 1 @919 ]
+[s S414 . 1 `uc 1 IOCCN0 1 0 :1:0 
+`uc 1 IOCCN1 1 0 :1:1 
+`uc 1 IOCCN2 1 0 :1:2 
+`uc 1 IOCCN3 1 0 :1:3 
+`uc 1 IOCCN4 1 0 :1:4 
+`uc 1 IOCCN5 1 0 :1:5 
+`uc 1 IOCCN6 1 0 :1:6 
+`uc 1 IOCCN7 1 0 :1:7 
+]
+"6957
+[u S423 . 1 `S414 1 . 1 0 ]
+[v _IOCCNbits IOCCNbits `VES423  1 e 1 @920 ]
+[s S393 . 1 `uc 1 IOCCF0 1 0 :1:0 
+`uc 1 IOCCF1 1 0 :1:1 
+`uc 1 IOCCF2 1 0 :1:2 
+`uc 1 IOCCF3 1 0 :1:3 
+`uc 1 IOCCF4 1 0 :1:4 
+`uc 1 IOCCF5 1 0 :1:5 
+`uc 1 IOCCF6 1 0 :1:6 
+`uc 1 IOCCF7 1 0 :1:7 
+]
+"7018
+[u S402 . 1 `S393 1 . 1 0 ]
+[v _IOCCFbits IOCCFbits `VES402  1 e 1 @921 ]
+"7332
+[v _TMR3L TMR3L `VEuc  1 e 1 @1041 ]
+"7351
+[v _TMR3H TMR3H `VEuc  1 e 1 @1042 ]
+"7370
+[v _T3CON T3CON `VEuc  1 e 1 @1043 ]
+[s S79 . 1 `uc 1 TMR3ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 T3SYNC 1 0 :1:2 
+`uc 1 T3SOSC 1 0 :1:3 
+`uc 1 T3CKPS 1 0 :2:4 
+`uc 1 TMR3CS 1 0 :2:6 
+]
+"7392
+[s S86 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T3CKPS0 1 0 :1:4 
+`uc 1 T3CKPS1 1 0 :1:5 
+`uc 1 TMR3CS0 1 0 :1:6 
+`uc 1 TMR3CS1 1 0 :1:7 
+]
+[u S92 . 1 `S79 1 . 1 0 `S86 1 . 1 0 ]
+[v _T3CONbits T3CONbits `VES92  1 e 1 @1043 ]
+"7441
+[v _T3GCON T3GCON `VEuc  1 e 1 @1044 ]
+[s S109 . 1 `uc 1 T3GSS 1 0 :2:0 
+`uc 1 T3GVAL 1 0 :1:2 
+`uc 1 T3GGO_nDONE 1 0 :1:3 
+`uc 1 T3GSPM 1 0 :1:4 
+`uc 1 T3GTM 1 0 :1:5 
+`uc 1 T3GPOL 1 0 :1:6 
+`uc 1 TMR3GE 1 0 :1:7 
+]
+"7461
+[s S117 . 1 `uc 1 T3GSS0 1 0 :1:0 
+`uc 1 T3GSS1 1 0 :1:1 
+]
+[u S120 . 1 `S109 1 . 1 0 `S117 1 . 1 0 ]
+[v _T3GCONbits T3GCONbits `VES120  1 e 1 @1044 ]
+"11654
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2329 ]
+"11792
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2331 ]
+"11887
+[v _OSCEN OSCEN `VEuc  1 e 1 @2333 ]
+"11932
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2334 ]
+"11989
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2335 ]
+"12034
+[v _PPSLOCK PPSLOCK `VEuc  1 e 1 @3599 ]
+[s S484 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
+]
+"12044
+[u S486 . 1 `S484 1 . 1 0 ]
+[v _PPSLOCKbits PPSLOCKbits `VES486  1 e 1 @3599 ]
+[s S511 . 1 `uc 1 CCP1PPS 1 0 :5:0 
+]
+"12274
+[s S513 . 1 `uc 1 CCP1PPS0 1 0 :1:0 
+`uc 1 CCP1PPS1 1 0 :1:1 
+`uc 1 CCP1PPS2 1 0 :1:2 
+`uc 1 CCP1PPS3 1 0 :1:3 
+`uc 1 CCP1PPS4 1 0 :1:4 
+]
+[u S519 . 1 `S511 1 . 1 0 `S513 1 . 1 0 ]
+[v _CCP1PPSbits CCP1PPSbits `VES519  1 e 1 @3604 ]
+[s S491 . 1 `uc 1 RXPPS 1 0 :5:0 
+]
+"12886
+[s S493 . 1 `uc 1 RXDTPPS0 1 0 :1:0 
+`uc 1 RXDTPPS1 1 0 :1:1 
+`uc 1 RXDTPPS2 1 0 :1:2 
+`uc 1 RXDTPPS3 1 0 :1:3 
+`uc 1 RXDTPPS4 1 0 :1:4 
+]
+[u S499 . 1 `S491 1 . 1 0 `S493 1 . 1 0 ]
+[v _RXPPSbits RXPPSbits `VES499  1 e 1 @3620 ]
+[s S531 . 1 `uc 1 RB5PPS 1 0 :5:0 
+]
+"13574
+[s S533 . 1 `uc 1 RB5PPS0 1 0 :1:0 
+`uc 1 RB5PPS1 1 0 :1:1 
+`uc 1 RB5PPS2 1 0 :1:2 
+`uc 1 RB5PPS3 1 0 :1:3 
+`uc 1 RB5PPS4 1 0 :1:4 
+]
+[u S539 . 1 `S531 1 . 1 0 `S533 1 . 1 0 ]
+[v _RB5PPSbits RB5PPSbits `VES539  1 e 1 @3741 ]
+"19358
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"20392
+[v _PLLR PLLR `VEb  1 e 0 @18656 ]
+"7 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\LED_Ctrl.c
+[v _Led_ON Led_ON `uc  1 s 1 Led_ON ]
+[v _LED_Color LED_Color `uc  1 s 1 LED_Color ]
+"8
+[v _LED_msec_Cnt LED_msec_Cnt `ui  1 s 2 LED_msec_Cnt ]
+[v _Blick_tickPointMsec Blick_tickPointMsec `ui  1 s 2 Blick_tickPointMsec ]
+[v _Blick_tickPoint Blick_tickPoint `ui  1 s 2 Blick_tickPoint ]
+[v _LedON_Duration_msec LedON_Duration_msec `ui  1 s 2 LedON_Duration_msec ]
+[s S905 . 8 `ui 1 MeasurePulseCount 2 0 `ui 1 MeasureRunTime 2 2 `ui 1 NutRunState 2 4 `ui 1 NutRunDirection 2 6 ]
+"119 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\main.c
+[s S910 . 8 `ui 1 PulseInRevolution 2 0 `ui 1 SetTotalPulseRun 2 2 `ui 1 SetTotalRunTime 2 4 `ui 1 SetRunDirection 2 6 ]
+[s S915 . 16 `S905 1 mcuTOplcData 8 0 `S910 1 plcTOmcuData 8 8 ]
+[v _ModbusData ModbusData `S915  1 e 16 0 ]
+"139
+[v _capturePulseusec capturePulseusec `ui  1 e 2 0 ]
+"140
+[v _PulseStatus PulseStatus `uc  1 e 1 0 ]
+"142
+[v _EPCPulseCountClock EPCPulseCountClock `ui  1 e 2 0 ]
+"143
+[v _EPCPulseCountAntiClock EPCPulseCountAntiClock `ui  1 e 2 0 ]
+"144
+[v _EPCRunTime EPCRunTime `ul  1 e 4 0 ]
+"146
+[v _TimertickMsec TimertickMsec `ul  1 e 4 0 ]
+"148
+[v _delayCount delayCount `ui  1 e 2 0 ]
+"149
+[v _delayFlag delayFlag `uc  1 e 1 0 ]
+[s S918 . 7 `uc 1 u8id 1 0 `uc 1 u8fct 1 1 `ui 1 u16RegAdd 2 2 `ui 1 u16CoilsNo 2 4 `*.4ui 1 au16reg 1 6 ]
+"153
+[v _telegram telegram `[2]S918  1 e 14 0 ]
+"61 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/eusart.c
+[v _eusartTxHead eusartTxHead `VEuc  1 e 1 0 ]
+"62
+[v _eusartTxTail eusartTxTail `VEuc  1 e 1 0 ]
+"63
+[v _eusartTxBuffer eusartTxBuffer `VE[32]uc  1 e 32 0 ]
+"64
+[v _eusartTxBufferRemaining eusartTxBufferRemaining `VEuc  1 e 1 0 ]
+"66
+[v _eusartRxHead eusartRxHead `VEuc  1 e 1 0 ]
+"67
+[v _eusartRxTail eusartRxTail `VEuc  1 e 1 0 ]
+"68
+[v _eusartRxBuffer eusartRxBuffer `VE[32]uc  1 e 32 0 ]
+"69
+[v _eusartRxCount eusartRxCount `VEuc  1 e 1 0 ]
+"51 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/pin_manager.c
+[v _IOCCF4_InterruptHandler IOCCF4_InterruptHandler `*.37(v  1 e 2 0 ]
+"52
+[v _IOCCF5_InterruptHandler IOCCF5_InterruptHandler `*.37(v  1 e 2 0 ]
+"58 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/tmr0.c
+[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
+"57 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/tmr3.c
+[v _timer3ReloadVal timer3ReloadVal `VEui  1 e 2 0 ]
+"58
+[v _TMR3_InterruptHandler TMR3_InterruptHandler `*.37(v  1 e 2 0 ]
+"18 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\modbusMS.c
+[v _u8ID u8ID `uc  1 e 1 0 ]
+"21
+[v _u8state u8state `uc  1 e 1 0 ]
+"22
+[v _u8lastError u8lastError `uc  1 e 1 0 ]
+"23
+[v _au8Buffer au8Buffer `[32]uc  1 e 32 0 ]
+"24
+[v _u8BufferSize u8BufferSize `uc  1 e 1 0 ]
+"25
+[v _u8lastRec u8lastRec `uc  1 e 1 0 ]
+"26
+[v _au16regs au16regs `*.4ui  1 e 1 0 ]
+"27
+[v _u16InCnt u16InCnt `ui  1 e 2 0 ]
+[v _u16OutCnt u16OutCnt `ui  1 e 2 0 ]
+[v _u16errCnt u16errCnt `ui  1 e 2 0 ]
+"28
+[v _u16timeOut u16timeOut `ui  1 e 2 0 ]
+"29
+[v _u32time u32time `ul  1 e 4 0 ]
+[v _u32timeOut u32timeOut `ul  1 e 4 0 ]
+"30
+[v _u8regsize u8regsize `uc  1 e 1 0 ]
+"104 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\modbusMS.h
+[v _fctsupported fctsupported `DCC[8]uc  1 e 8 0 ]
+[s S1488 . 101 `[32]ui 1 PulseTime64 64 0 `[32]uc 1 PulseState 32 64 `uc 1 count 1 96 `uc 1 overflow 1 97 `uc 1 readIndexptr 1 98 `uc 1 writeIndexptr 1 99 `uc 1 maxoverflowLatch 1 100 ]
+"5 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\RingBuffer.c
+[v _Rbuff Rbuff `S1488  1 s 101 Rbuff ]
+"166 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"265
+} 0
+"117 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/tmr3.c
+[v _TMR3_WriteTimer TMR3_WriteTimer `(v  1 e 1 0 ]
+{
+[v TMR3_WriteTimer@timerVal timerVal `ui  1 p 2 5 ]
+"137
+} 0
+"102
+[v _TMR3_StopTimer TMR3_StopTimer `(v  1 e 1 0 ]
+{
+"106
+} 0
+"76 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"86
+} 0
+"106
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"110
+} 0
+"64 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/tmr3.c
+[v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"96
+[v _TMR3_StartTimer TMR3_StartTimer `(v  1 e 1 0 ]
+{
+"100
+} 0
+"172
+[v _TMR3_SetInterruptHandler TMR3_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR3_SetInterruptHandler@InterruptHandler InterruptHandler `*.37v  1 p 2 5 ]
+"174
+} 0
+"60 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"87
+} 0
+"89
+[v _TMR0_StartTimer TMR0_StartTimer `(v  1 e 1 0 ]
+{
+"93
+} 0
+"145
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37v  1 p 2 5 ]
+"147
+} 0
+"54 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"113
+[v PIN_MANAGER_Initialize@state state `uc  1 a 1 7 ]
+"128
+} 0
+"195
+[v _IOCCF5_SetInterruptHandler IOCCF5_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v IOCCF5_SetInterruptHandler@InterruptHandler InterruptHandler `*.37v  1 p 2 5 ]
+"197
+} 0
+"165
+[v _IOCCF4_SetInterruptHandler IOCCF4_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v IOCCF4_SetInterruptHandler@InterruptHandler InterruptHandler `*.37v  1 p 2 5 ]
+"167
+} 0
+"88 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"104
+} 0
+"58 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/ccp1.c
+[v _CCP1_Initialize CCP1_Initialize `(v  1 e 1 0 ]
+{
+"82
+} 0
+"316 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\modbusMS.c
+[v _ModbuspollSlave ModbuspollSlave `(c  1 e 1 0 ]
+{
+[v ModbuspollSlave@regs regs `*.4ui  1 a 1 wreg ]
+"348
+[v ModbuspollSlave@u8exception u8exception `uc  1 a 1 2 ]
+"321
+[v ModbuspollSlave@u8current u8current `uc  1 a 1 1 ]
+"340
+[v ModbuspollSlave@i8state i8state `c  1 a 1 0 ]
+"316
+[v ModbuspollSlave@regs regs `*.4ui  1 a 1 wreg ]
+[v ModbuspollSlave@u8size u8size `uc  1 p 1 44 ]
+"319
+[v ModbuspollSlave@regs regs `*.4ui  1 a 1 3 ]
+"390
+} 0
+"535
+[v _validateRequest validateRequest `(uc  1 e 1 0 ]
+{
+"549
+[v validateRequest@i i `uc  1 a 1 26 ]
+"564
+[v validateRequest@u16regs u16regs `ui  1 a 2 28 ]
+"538
+[v validateRequest@u16MsgCRC u16MsgCRC `ui  1 a 2 23 ]
+"565
+[v validateRequest@u8regs u8regs `uc  1 a 1 27 ]
+"548
+[v validateRequest@isSupported isSupported `uc  1 a 1 25 ]
+"596
+} 0
+"826
+[v _process_FC6 process_FC6 `(c  1 e 1 0 ]
+{
+[v process_FC6@regs regs `*.4ui  1 a 1 wreg ]
+"831
+[v process_FC6@u16val u16val `ui  1 a 2 28 ]
+"830
+[v process_FC6@u8CopyBufferSize u8CopyBufferSize `uc  1 a 1 32 ]
+"829
+[v process_FC6@u8add u8add `uc  1 a 1 31 ]
+"826
+[v process_FC6@regs regs `*.4ui  1 a 1 wreg ]
+[v process_FC6@u8size u8size `uc  1 p 1 25 ]
+"829
+[v process_FC6@regs regs `*.4ui  1 a 1 30 ]
+"842
+} 0
+"793
+[v _process_FC5 process_FC5 `(c  1 e 1 0 ]
+{
+[v process_FC5@regs regs `*.4ui  1 a 1 wreg ]
+"797
+[v process_FC5@u16coil u16coil `ui  1 a 2 30 ]
+"795
+[v process_FC5@u8currentBit u8currentBit `uc  1 a 1 34 ]
+[v process_FC5@u8currentRegister u8currentRegister `uc  1 a 1 33 ]
+"796
+[v process_FC5@u8CopyBufferSize u8CopyBufferSize `uc  1 a 1 29 ]
+"793
+[v process_FC5@regs regs `*.4ui  1 a 1 wreg ]
+[v process_FC5@u8size u8size `uc  1 p 1 25 ]
+"797
+[v process_FC5@regs regs `*.4ui  1 a 1 32 ]
+"816
+} 0
+"761
+[v _process_FC3 process_FC3 `(c  1 e 1 0 ]
+{
+[v process_FC3@regs regs `*.4ui  1 a 1 wreg ]
+"767
+[v process_FC3@i i `uc  1 a 1 34 ]
+"765
+[v process_FC3@u8regsno u8regsno `uc  1 a 1 33 ]
+"764
+[v process_FC3@u8StartAdd u8StartAdd `uc  1 a 1 32 ]
+"766
+[v process_FC3@u8CopyBufferSize u8CopyBufferSize `uc  1 a 1 30 ]
+"761
+[v process_FC3@regs regs `*.4ui  1 a 1 wreg ]
+[v process_FC3@u8size u8size `uc  1 p 1 25 ]
+"764
+[v process_FC3@regs regs `*.4ui  1 a 1 31 ]
+"783
+} 0
+"903
+[v _process_FC16 process_FC16 `(c  1 e 1 0 ]
+{
+[v process_FC16@regs regs `*.4ui  1 a 1 wreg ]
+"910
+[v process_FC16@temp temp `ui  1 a 2 29 ]
+"909
+[v process_FC16@i i `uc  1 a 1 35 ]
+"907
+[v process_FC16@u8regsno u8regsno `uc  1 a 1 34 ]
+"908
+[v process_FC16@u8CopyBufferSize u8CopyBufferSize `uc  1 a 1 33 ]
+"906
+[v process_FC16@u8StartAdd u8StartAdd `uc  1 a 1 32 ]
+"905
+[v process_FC16@u8func u8func `uc  1 a 1 28 ]
+"903
+[v process_FC16@regs regs `*.4ui  1 a 1 wreg ]
+[v process_FC16@u8size u8size `uc  1 p 1 25 ]
+"905
+[v process_FC16@regs regs `*.4ui  1 a 1 31 ]
+"928
+} 0
+"852
+[v _process_FC15 process_FC15 `(c  1 e 1 0 ]
+{
+[v process_FC15@regs regs `*.4ui  1 a 1 wreg ]
+"856
+[v process_FC15@u16currentCoil u16currentCoil `ui  1 a 2 41 ]
+[v process_FC15@u16coil u16coil `ui  1 a 2 36 ]
+"861
+[v process_FC15@u16Coilno u16Coilno `ui  1 a 2 31 ]
+"860
+[v process_FC15@u16StartCoil u16StartCoil `ui  1 a 2 29 ]
+"854
+[v process_FC15@u8bitsno u8bitsno `uc  1 a 1 43 ]
+[v process_FC15@u8currentBit u8currentBit `uc  1 a 1 40 ]
+[v process_FC15@u8currentRegister u8currentRegister `uc  1 a 1 39 ]
+[v process_FC15@u8frameByte u8frameByte `uc  1 a 1 35 ]
+"857
+[v process_FC15@bTemp bTemp `uc  1 a 1 34 ]
+"855
+[v process_FC15@u8CopyBufferSize u8CopyBufferSize `uc  1 a 1 33 ]
+"852
+[v process_FC15@regs regs `*.4ui  1 a 1 wreg ]
+[v process_FC15@u8size u8size `uc  1 p 1 25 ]
+"860
+[v process_FC15@regs regs `*.4ui  1 a 1 38 ]
+"893
+} 0
+"706
+[v _process_FC1 process_FC1 `(c  1 e 1 0 ]
+{
+[v process_FC1@regs regs `*.4ui  1 a 1 wreg ]
+"714
+[v process_FC1@u16Coilno u16Coilno `ui  1 a 2 41 ]
+"710
+[v process_FC1@u16currentCoil u16currentCoil `ui  1 a 2 38 ]
+[v process_FC1@u16coil u16coil `ui  1 a 2 36 ]
+"713
+[v process_FC1@u16StartCoil u16StartCoil `ui  1 a 2 33 ]
+"708
+[v process_FC1@u8bitsno u8bitsno `uc  1 a 1 40 ]
+[v process_FC1@u8bytesno u8bytesno `uc  1 a 1 35 ]
+"709
+[v process_FC1@u8CopyBufferSize u8CopyBufferSize `uc  1 a 1 32 ]
+"708
+[v process_FC1@u8currentBit u8currentBit `uc  1 a 1 31 ]
+[v process_FC1@u8currentRegister u8currentRegister `uc  1 a 1 30 ]
+"706
+[v process_FC1@regs regs `*.4ui  1 a 1 wreg ]
+[v process_FC1@u8size u8size `uc  1 p 1 25 ]
+"713
+[v process_FC1@regs regs `*.4ui  1 a 1 29 ]
+"751
+} 0
+"1051
+[v _wordConvert wordConvert `(ui  1 e 2 0 ]
+{
+[v wordConvert@hByte hByte `uc  1 a 1 wreg ]
+[v wordConvert@hByte hByte `uc  1 a 1 wreg ]
+[v wordConvert@lByte lByte `uc  1 p 1 5 ]
+"1053
+[v wordConvert@hByte hByte `uc  1 a 1 12 ]
+"1054
+} 0
+"442
+[v _sendTxBuffer sendTxBuffer `(v  1 e 1 0 ]
+{
+"451
+[v sendTxBuffer@u16crc u16crc `ui  1 a 2 22 ]
+"444
+[v sendTxBuffer@i i `uc  1 a 1 24 ]
+"495
+} 0
+"374 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\main.c
+[v _millis millis `(ul  1 e 4 0 ]
+{
+"377
+} 0
+"504 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\modbusMS.c
+[v _calcCRC calcCRC `(ui  1 e 2 0 ]
+{
+[v calcCRC@u8length u8length `uc  1 a 1 wreg ]
+"511
+[v calcCRC@j j `uc  1 a 1 15 ]
+"508
+[v calcCRC@i i `uc  1 a 1 14 ]
+"506
+[v calcCRC@temp temp `ui  1 a 2 16 ]
+[v calcCRC@flag flag `ui  1 a 2 12 ]
+[v calcCRC@temp2 temp2 `ui  1 a 2 10 ]
+"504
+[v calcCRC@u8length u8length `uc  1 a 1 wreg ]
+"507
+[v calcCRC@u8length u8length `uc  1 a 1 9 ]
+"526
+} 0
+"461 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\main.c
+[v _Serialwrite Serialwrite `(v  1 e 1 0 ]
+{
+[v Serialwrite@temp temp `uc  1 a 1 wreg ]
+[v Serialwrite@temp temp `uc  1 a 1 wreg ]
+"464
+[v Serialwrite@temp temp `uc  1 a 1 5 ]
+"469
+} 0
+"445
+[v _ClearSerialRxBuffer ClearSerialRxBuffer `(v  1 e 1 0 ]
+{
+"447
+[v ClearSerialRxBuffer@bdummy bdummy `uc  1 a 1 8 ]
+"454
+} 0
+"401 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\modbusMS.c
+[v _getRxBuffer getRxBuffer `(c  1 e 1 0 ]
+{
+"403
+[v getRxBuffer@bBuffOverflow bBuffOverflow `uc  1 a 1 8 ]
+"428
+} 0
+"457 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\main.c
+[v _Serialread Serialread `(uc  1 e 1 0 ]
+{
+"460
+} 0
+"112 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/eusart.c
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+{
+"114
+[v EUSART_Read@readValue readValue `uc  1 a 1 6 ]
+"130
+} 0
+"440 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\main.c
+[v _Serialavailable Serialavailable `(uc  1 e 1 0 ]
+{
+"444
+} 0
+"649 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\modbusMS.c
+[v _buildException buildException `(v  1 e 1 0 ]
+{
+[v buildException@u8exception u8exception `uc  1 a 1 wreg ]
+"651
+[v buildException@u8func u8func `uc  1 a 1 7 ]
+"649
+[v buildException@u8exception u8exception `uc  1 a 1 wreg ]
+"651
+[v buildException@u8exception u8exception `uc  1 a 1 6 ]
+"657
+} 0
+"53
+[v _Modbusinit Modbusinit `(v  1 e 1 0 ]
+{
+[v Modbusinit@u8id u8id `uc  1 a 1 wreg ]
+[v Modbusinit@u8id u8id `uc  1 a 1 wreg ]
+"55
+[v Modbusinit@u8id u8id `uc  1 a 1 11 ]
+"67
+} 0
+"436 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\main.c
+[v _Serialbegin Serialbegin `(v  1 e 1 0 ]
+{
+[v Serialbegin@baud baud `ul  1 p 4 6 ]
+"439
+} 0
+"75 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"110
+} 0
+"12 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\LED_Ctrl.c
+[v _LedONStatusBusy LedONStatusBusy `(uc  1 e 1 0 ]
+{
+"15
+} 0
+"18
+[v _LedONStartConfig LedONStartConfig `(uc  1 e 1 0 ]
+{
+[v LedONStartConfig@LEDcolor LEDcolor `uc  1 a 1 wreg ]
+[v LedONStartConfig@LEDcolor LEDcolor `uc  1 a 1 wreg ]
+[v LedONStartConfig@LedONDurationSec LedONDurationSec `uc  1 p 1 13 ]
+[v LedONStartConfig@LedONNumBlink LedONNumBlink `uc  1 p 1 14 ]
+"20
+[v LedONStartConfig@LEDcolor LEDcolor `uc  1 a 1 17 ]
+"51
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 9 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 5 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 7 ]
+"53
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 10 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 12 ]
+"6
+[v ___lwdiv@divisor divisor `ui  1 p 2 5 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 7 ]
+"31
+} 0
+"51 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"82
+} 0
+"156 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/tmr3.c
+[v _TMR3_ISR TMR3_ISR `(v  1 e 1 0 ]
+{
+"169
+} 0
+"176
+[v _TMR3_DefaultInterruptHandler TMR3_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"180
+} 0
+"283 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\main.c
+[v _Timer3_Overflow Timer3_Overflow `(v  1 e 1 0 ]
+{
+"324
+} 0
+"18 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\LED_Ctrl.c
+[v i1_LedONStartConfig LedONStartConfig `(uc  1 e 1 0 ]
+{
+[v i1LedONStartConfig@LEDcolor LEDcolor `uc  1 a 1 wreg ]
+[v i1LedONStartConfig@LEDcolor LEDcolor `uc  1 a 1 wreg ]
+[v i1LedONStartConfig@LedONDurationSec LedONDurationSec `uc  1 p 1 8 ]
+[v i1LedONStartConfig@LedONNumBlink LedONNumBlink `uc  1 p 1 9 ]
+"20
+[v i1LedONStartConfig@LEDcolor LEDcolor `uc  1 a 1 12 ]
+"51
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+{
+[v i1___wmul@product __wmul `ui  1 a 2 4 ]
+[v i1___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v i1___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+[v i1___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+[v i1___lwdiv@quotient __lwdiv `ui  1 a 2 5 ]
+[v i1___lwdiv@counter __lwdiv `uc  1 a 1 7 ]
+[v i1___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v i1___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"31
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"6
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"31
+} 0
+"123 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"132
+} 0
+"134
+[v _TMR0_CallBack TMR0_CallBack `(v  1 e 1 0 ]
+{
+"143
+} 0
+"364 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\main.c
+[v _Timer0_tick10msecFunc Timer0_tick10msecFunc `(v  1 e 1 0 ]
+{
+"372
+} 0
+"54 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\LED_Ctrl.c
+[v _LedON_Control_10msec LedON_Control_10msec `(v  1 e 1 0 ]
+{
+"98
+} 0
+"149 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/tmr0.c
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"152
+} 0
+"130 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+{
+"145
+} 0
+"180
+[v _IOCCF5_ISR IOCCF5_ISR `(v  1 e 1 0 ]
+{
+"190
+} 0
+"202
+[v _IOCCF5_DefaultInterruptHandler IOCCF5_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"205
+} 0
+"150
+[v _IOCCF4_ISR IOCCF4_ISR `(v  1 e 1 0 ]
+{
+"160
+} 0
+"172
+[v _IOCCF4_DefaultInterruptHandler IOCCF4_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"175
+} 0
+"155 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/eusart.c
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+{
+"172
+} 0
+"174
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+{
+"192
+} 0
+"84 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/ccp1.c
+[v _CCP1_CaptureISR CCP1_CaptureISR `(v  1 e 1 0 ]
+{
+[s S680 . 2 `uc 1 ccpr1l 1 0 `uc 1 ccpr1h 1 1 ]
+"86
+[s S683 . 2 `ui 1 ccpr1_16Bit 2 0 ]
+[u S685 CCPR1Reg_tag 2 `S680 1 . 2 0 `S683 1 . 2 0 ]
+[v CCP1_CaptureISR@module module `S685  1 a 2 0 ]
+"97
+} 0
+"99
+[v _CCP1_CallBack CCP1_CallBack `(v  1 e 1 0 ]
+{
+[v CCP1_CallBack@capturedValue capturedValue `ui  1 p 2 10 ]
+"103
+} 0
+"268 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\main.c
+[v _EncA_PulseEdgeEvent EncA_PulseEdgeEvent `(v  1 e 1 0 ]
+{
+[v EncA_PulseEdgeEvent@capturedValue capturedValue `ui  1 p 2 8 ]
+"281
+} 0
+"326
+[v _OnEncPulseEdgeEvent OnEncPulseEdgeEvent `(v  1 e 1 0 ]
+{
+[v OnEncPulseEdgeEvent@capturevalue capturevalue `ui  1 p 2 4 ]
+"362
+} 0
+"117 D:\BackUp\Paul\IEC\EncoderPulseTool\EPCCode\Test17Jan2018Issue\EPC_ModbusEnable\EPC_Modbus.X\mcc_generated_files/tmr3.c
+[v i1_TMR3_WriteTimer TMR3_WriteTimer `(v  1 e 1 0 ]
+{
+[v i1TMR3_WriteTimer@timerVal timerVal `ui  1 p 2 0 ]
+"137
+} 0
+"102
+[v i1_TMR3_StopTimer TMR3_StopTimer `(v  1 e 1 0 ]
+{
+"106
+} 0
+"96
+[v i1_TMR3_StartTimer TMR3_StartTimer `(v  1 e 1 0 ]
+{
+"100
+} 0
+"108
+[v _TMR3_ReadTimer TMR3_ReadTimer `(ui  1 e 2 0 ]
+{
+"110
+[v TMR3_ReadTimer@readVal readVal `ui  1 a 2 2 ]
+"115
+} 0

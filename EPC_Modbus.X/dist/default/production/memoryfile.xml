@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production\EPC_Modbus.X.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>4096</length>
+      <used>3435</used>
+      <free>661</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>512</length>
+      <used>370</used>
+      <free>142</free>
+    </memory>
+  </executable>
+</project>
